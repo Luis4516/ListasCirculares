@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ruta de transporte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="base.css" />
+  </head>
+  <body>
+      <h1>Sistema de información de transporte</h1>
+      <p>Agregar base</p>
+    <div>
+        <div>
+            <label for="number">Código de base</label>
+            <input type="number" id="codigo">
+        </div>
+        <br>
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="nombre"> 
+        </div>
+        <div>
+            <label for="number">Minutos - Base</label>
+            <input type="number" id="minutos">
+        </div>
+        <br>
+        <div>
+            <button type="button" id="btnAgregar">Añadir Base</button>
+        </div>
+        <br> 
+    </div>
+    <br>
+    <div>
+        <h3>Bases Actuales</h3>
+        <table id="tableArt" class="table">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Minutos</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <h3 style="color: teal;">Crear Recorrido</h3>
+    <div>
+        <label for="number">Código Base-Inicio</label>
+        <input type="number" id="codigoInicio">
+    </div>
+    <div>
+        <label for="number">Hora Inicio(minutos)</label>
+        <input type="number" id="horaI">
+    </div>
+    <div>
+        <label for="number">Hora Fin(minutos)</label>
+        <input type="number" id="horaF">
+    </div>
+
+    <h2>Información de la ruta</h2>
+    <p id="toString"></p>
+  </body>
+  <script src="./Main.js" type="module"></script>
+</html>
